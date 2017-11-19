@@ -1,30 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import SwiftSlider from 'react-swift-slider'
 
 class App extends Component {
   render() {
     const data =  [
-      {'id':'1','src':'https://picjumbo.imgix.net/HNCK9192.jpg?q=40&w=1650&sharp=30'},
-      {'id':'2','src':'https://picjumbo.imgix.net/HNCK3313.jpg?q=40&w=1650&sharp=30'},
-      {'id':'3','src':'https://picjumbo.imgix.net/HNCK4330.jpg?q=40&w=1650&sharp=30'},
-      {'id':'4','src':'https://picjumbo.imgix.net/HNCK0180.jpg?q=40&w=1650&sharp=30'},
-      {'id':'5','src':'https://picjumbo.imgix.net/HNCK3286.jpg?q=40&w=1650&sharp=30'}
+      {'id':'1','src':'/assets/images/2017_alfa-romeo_stelvio_leaked_02.jpg'},
+      {'id':'2','src':'/assets/images/2017_alfa_romeo_stelvioquadrifoglio_official_09.jpg'},
+      {'id':'3','src':'/assets/images/2018-alfa-romeo-stelvio-quadrifoglio-specs-photos-speed-2.jpg'},
+      {'id':'4','src':'/assets/images/alfa-romeo-giulia-quadrifoglio-2017-us-wallpapers-and-hd-images-13.jpg'},
+      {'id':'5','src':'/assets/images/ARWP_Infra_Desk_1920_1080_Quad.png'},
+      {'id':'6','src':'/assets/images/ARWP_RearRunning_Desk_1920_1080_Hero.png'},
+      {'id':'7','src':'/assets/images/ARWP_Running_Desk_1920_1080_Engine.png'},
+      {'id':'8','src':'/assets/images/ARWP_Rear34Run_Desk_1920_1080_Hero.png'}
     ];
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <SwiftSlider data={data} />
-      </div>
+      <SwiftSlider data={data} height={900} enableNextAndPrev={false} />
     );
   }
 }
