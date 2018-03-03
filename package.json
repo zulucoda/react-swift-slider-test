@@ -6,7 +6,7 @@
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-scripts": "1.0.17",
-    "react-swift-slider": "^2.0.0"
+    "react-swift-slider": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
