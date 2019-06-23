@@ -15,7 +15,7 @@ class App extends Component {
     ];
 
     return (
-      <SwiftSlider data={data} height={900} enableNextAndPrev={false} />
+      <SwiftSlider data={data} height={900} />
     );
   }
 }
